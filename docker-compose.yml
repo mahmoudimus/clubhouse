@@ -1,0 +1,16 @@
+version: '2.2'
+
+services:
+  app:
+    build: ./
+    container_name: clubhouse
+    volumes:
+      - ./:/opt/app/clubhouse/
+    env_file:
+      - .env
+    environment:
+      PYTHONUNBUFFERED=0
+    ports:
+      - "3141:3141"
+      - "3142:3142"
+      - "8000:8000"

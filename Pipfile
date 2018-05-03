@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.6"
+
+[packages]
+marshmallow = "==v3.0.0b8"
+attrs = "==17.4.0"
+requests = ">=2.0,<3.0"
+
+[dev-packages]
+unidecode = "==1.0.22"
+lxml = "*"
+jinja2 = "==2.10"
+flake8 = ">=3.3.0,<4"
+coverage = "*"
+pep8 = "*"
+pytest = "*"
+"pytest-pep8" ="*"
+ipython = "*"
+ipdb = "*"
