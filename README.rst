@@ -33,11 +33,11 @@ source frequently::
 Generate Client
 ---------------
 
-::
-   curl -O clubhouse-api.html https://clubhouse.io/api/rest/v2/
-   python clubhouse/parser.py clubhouse-api.html -o clubhouse/models.py
+This will parse the `Resources <https://clubhouse.io/api/rest/v2/#Resources>`_ section from `Clubhouse's <https://clubhouse.io>` documentation and generate `marshmallow <https://marshmallow.readthedocs.io/en/latest/>`_ schemas that can be used for interacting with the API::
 
-This will parse the `Resources <https://clubhouse.io/api/rest/v2/#Resources>`_ section from `Clubhouse's <https://clubhouse.io>` documentation and generate `marshmallow <https://marshmallow.readthedocs.io/en/latest/>`_ schemas that can be used for interacting with the API.
+     curl -O clubhouse-api.html https://clubhouse.io/api/rest/v2/
+     python clubhouse/parser.py clubhouse-api.html -o clubhouse/models.py
+
 
 Usage
 -----
