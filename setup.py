@@ -18,7 +18,7 @@ setup(
     url='https://github.com/mahmoudimus/clubhouse',
     packages=find_packages(exclude=['tests', '*.test', '*.test.*']),
     include_package_data=True,
-    zip_safe=False
+    zip_safe=False,
     install_requires=[
         'marshmallow>=3.0,<4',
         'attrs>=17.4.0,<17.5',
